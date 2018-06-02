@@ -11,7 +11,7 @@ $app->get('/api/books',function() {
 	$query="select * from books order by id";
 	$result=$mysqli->query($query);
 
-	while($row= $result->fetch_asoc()){
+	while($row= $result->fetch_assoc()){
 		$data[]=$row;
 	}
 
